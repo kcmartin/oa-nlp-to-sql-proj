@@ -14,7 +14,7 @@ def create_table_definition_prompt(df, table_name):
     #
     # {}({})
     #
-    '''.format(table_name, ",".join(str(x) for x in df.colums))
+    '''.format(table_name, ",".join(str(x) for x in df.columns))
 
     return prompt
 

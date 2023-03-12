@@ -9,7 +9,7 @@ def dataframe_to_database(df, table_name):
         Returns:
             engine: SQLAlchemy engine object
     """
-    engine = create_engine(f'sqllite:///:memory:', echo=False)
+    engine = create_engine(f'sqlite:///:memory:', echo=False)
     df.to_sql(name=table_name, con=engine, index=False)
     return engine
 
